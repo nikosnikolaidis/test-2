@@ -31,4 +31,4 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Build Image
-      run: docker build -t test:$(date + '%Y-%m-%d')
+      run: docker build -t test:$(date + '%Y-%m-%d') .
